@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VBurgerMenu spec App shows VBurgerMenu with position = left 1`] = `
+<div
+  class="v-burger-menu-container"
+>
+  <!---->
+   
+  <div
+    class="v-burger-menu-content"
+  >
+    <!---->
+  </div>
+   
+  <div
+    class="v-burger-menu-child"
+  />
+</div>
+`;
+
+exports[`VBurgerMenu spec App shows VBurgerMenu with position = right 1`] = `
+<div
+  class="v-burger-menu-container"
+>
+  <!---->
+   
+  <div
+    class="v-burger-menu-child"
+  />
+   
+  <!---->
+</div>
+`;

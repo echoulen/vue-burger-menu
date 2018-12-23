@@ -1,29 +1,57 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <v-burger-menu :isOpen='isOpen' @onClose='onClose' :width='300' position='right'>
+      <div slot='content' @click='onOpen' class='content'>content</div>
+      <div slot='menu' class='menu'>menu</div>
+    </v-burger-menu>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import VBurgerMenu from './components/VBurgerMenu.vue';
 
 export default Vue.extend({
   name: 'app',
   components: {
-    HelloWorld,
+    VBurgerMenu,
+  },
+  data() {
+    return {isOpen: true};
+  },
+  methods: {
+    onOpen() {
+      this.isOpen = true;
+    },
+    onClose() {
+      this.isOpen = false;
+    },
   },
 });
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  body {
+    margin: 0;
+  }
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: white;
+    line-height: 100vh;
+    font-size: 30px;
+    user-select: none;
+  }
+  .content {
+    background-color: cornflowerblue;
+    width: 100vw;
+    height: 100vh;
+  }
+  .menu {
+    background-color: cadetblue;
+    height: 100vh;
+    width: 300px;
+  }
 </style>
