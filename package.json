@@ -1,10 +1,11 @@
 {
   "name": "v-burger-menu",
-  "version": "0.9.0",
-  "main": "dist/v-burger-menu.min.js",
+  "version": "0.9.1",
+  "main": "dist/v-burger-menu.common.js",
+  "types": "index.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target=wc --name v-burger-menu 'src/components/VBurgerMenu.vue'",
+    "build": "vue-cli-service build --target=lib 'src/index.ts'",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
