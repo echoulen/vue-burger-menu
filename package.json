@@ -1,7 +1,6 @@
 {
   "name": "v-burger-menu",
   "version": "0.1.0",
-  "private": true,
   "main": "dist/v-burger-menu.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
