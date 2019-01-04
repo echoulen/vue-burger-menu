@@ -2,32 +2,40 @@
 
 exports[`VBurgerMenu spec App shows VBurgerMenu with position = left 1`] = `
 <div
-  class="v-burger-menu-container"
+  class="v-burger-menu-container-wrapper"
 >
-  <!---->
-   
   <div
-    class="v-burger-menu-content"
+    class="v-burger-menu-container"
   >
     <!---->
+     
+    <div
+      class="v-burger-menu-content"
+    />
+     
+    <div
+      class="v-burger-menu-child"
+    />
   </div>
-   
-  <div
-    class="v-burger-menu-child"
-  />
 </div>
 `;
 
 exports[`VBurgerMenu spec App shows VBurgerMenu with position = right 1`] = `
 <div
-  class="v-burger-menu-container"
+  class="v-burger-menu-container-wrapper"
 >
-  <!---->
-   
   <div
-    class="v-burger-menu-child"
-  />
-   
-  <!---->
+    class="v-burger-menu-container"
+  >
+    <!---->
+     
+    <div
+      class="v-burger-menu-child"
+    />
+     
+    <div
+      class="v-burger-menu-content"
+    />
+  </div>
 </div>
 `;

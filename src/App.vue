@@ -46,12 +46,8 @@ export default Vue.extend({
   }
   .content {
     background-color: cornflowerblue;
-    width: 100vw;
-    height: 100vh;
   }
   .menu {
     background-color: cadetblue;
-    height: 100vh;
-    width: 300px;
   }
 </style>
